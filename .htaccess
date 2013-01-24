@@ -1,0 +1,7 @@
+RemoveHandler .html .htm
+AddType application/x-httpd-php5 .php .html
+AddHandler application/x-httpd-php5 .php .html
+<FilesMatch "\.(nt|nt)">
+  ForceType application/nt
+  Header set Content-Disposition attachment
+</FilesMatch>
